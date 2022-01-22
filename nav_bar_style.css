@@ -1,0 +1,164 @@
+.navbar		{
+	background-color:rgb(235,46,57);
+}
+table.table1 { 
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:rgb(235,46,57);
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+table.table1 tr  {
+	float: left;
+  }
+
+table.table1 tr a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+
+table.table1 tr a:hover:not(.active) {
+	background-color: rgba(255,255,255,0.3);
+	transition: ease .2s;
+}
+.active {
+	background-color: #ff8a8a;
+	color:black;
+	border: solid;
+	border:10px;
+	
+}
+table.table1 tr a:hover{
+	background-color: rgba(255,255,255,0.4);
+	transition: ease .2s;
+}
+
+
+
+
+
+table.table2 { 
+	
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color:rgb(235,46,57);
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+table.table2 tr  {
+	float: left;
+  }
+
+table.table2 tr a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+
+
+
+.header {
+	background-color: transparent;
+	padding: 20px;
+	text-align: center;
+	font-weight:bold;
+	width: 74%;
+}
+.column {
+	float: left;
+}
+
+
+.column.left {
+	width: 65%;
+
+	border-width:thin;
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+  
+}
+
+
+.column.right {
+	width: 25%;
+	background-color:rgb(235,46,57);
+	border: solid;
+	border-width:thin;
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+	text-align:left;	
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+  
+}
+
+@media screen and (max-width: 300px) {
+  .column.left, .column.right {
+    width: 100%;
+	line-height:
+  }
+}
+.header {
+	background-color: lightblue;
+	padding: 20px;
+	text-align: center;
+	font-size:50px;
+}
+.menu {
+	float: left;
+}
+
+.menu.left {
+	width: 25%;
+	text-align:left;
+  
+}
+
+
+.menu.right {
+	width: 75%;
+	text-align:right;
+	
+}
+
+.menu:after {
+	content: "";
+	display: table;
+	clear: both;
+  
+}
+.footer {
+  background-color:rgb(235,46,57);
+  color:white;
+  text-align: center;
+  padding: 10px;
+  float:bottom;
+}
+
+@media screen and (max-width: 300px) {
+  .menu.left, .menu.right {
+    width: 100%;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  }

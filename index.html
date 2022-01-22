@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html LANG="en">
+<head>
+	<title> Sawadee Kitchen Homepage </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style_team.css">
+	<link rel="stylesheet" href="nav_bar_style.css">
+	<link rel="stylesheet" href="button.css">
+	<link rel="icon" type="image/x-icon" href="images/icon.png">
+
+	<style>
+	body {
+	  background-color: #f5d4d4;
+	}
+	</style>
+
+</head>
+<body>
+	<div class="navbar">
+	<div class="row">
+	<div class="menu left">
+
+	<table style="float:left;"class="table2">
+		<tr>
+			<td style="font-size:25px;font-family: Courier New monospace;text-shadow: 4px 2px 2px white;">
+			<a href="index.html"> <span style="color:black;font-weight:bold;"> SAWADEE KITCHEN </span> </a> </td>
+		</tr>
+	</table>
+	</div>
+	<div class="menu right">
+	<table style="float:right;" class="table1"> 
+		<tr>
+			<td><a href="about_us.html" >&#128394 ABOUT US</a></td>
+			<td><a href="menu.html">  &#128722 MENU</a></td>
+			<td><a href="location.html"> &#127760 LOCATION </a></td>
+			<td><a href="team.html"> &#128295 TEAM</a></td>
+			<td><a href="contact.html"> &#128222 CONTACT </a></td>
+		</tr>
+	</table>
+	</div>
+	</div>
+	</div>
+	<br><br>
+
+	
+	<div class="slideshow-container">
+		
+		<center>
+		<div class="mySlides fade">
+		   <img src="images/icon.png" alt="Sawadee Logo"style="width:850px;height:500px;" >
+		</div>
+		
+		<div class="mySlides fade">
+		   <img src="images/lokchingg.jpeg" alt="Lokching"style="width:850px;height:500px;" >
+		</div>
+
+		<div class="mySlides fade">
+		 <img src="images/oden.jpg" alt="Oden"style="width:850px;height:500px;">
+		</div>
+
+		<div class="mySlides fade">
+		 <img src="images/kerabu_maggie.jpg" alt="Kerabu Maggie"style="width:850px;height:500px;">
+		</div>
+
+		<div class="mySlides fade">
+		<img src="images/lokching.jpg" alt="Lokching" style="width:850px;height:500px;">
+		</div>
+
+		<div class="mySlides fade">
+		 <img src="images/odenn.jpg" alt="Oden"style="width:850px;height:500px;">
+		</div>
+		
+		<div class="mySlides fade">
+		<video width="850px" height="500" style="margin-top:25px;"
+		autoplay muted	controls loop>
+		<source src="video/slideshow.mp4"
+		type="video/mp4"> </video>
+		</div>
+
+		</center>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+	<span class="dot" onclick="currentSlide(4)"></span> 
+	<span class="dot" onclick="currentSlide(5)"></span> 
+	<span class="dot" onclick="currentSlide(6)"></span> 
+	<span class="dot" onclick="currentSlide(7)"></span> 
+	</div>
+	
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+	
+	</center>
+	</div>
+	</div>
+	<br><br>
+	<center>
+	<audio controls >
+		<source src="audio/welcome.mp3"
+		type="audio/mpeg">
+	</audio>
+	</center>
+	<span style="color:black;">
+	<div style="margin-left:250px;" class="row">
+	<div class="column2">
+	<h2 style="font-family:Brush Script MT ,cursive;font-size:55px;"> Vision </h1>
+	<div class="content">
+	<p  style="font-family:Georgia ,serif;font-size:15px;"> 
+	Introducing Sawadee Kitchen brand and develop branches throughout Malaysia and even the world.
+	</p> 
+	</div>
+	</div>
+	<div class="column2">
+	<h2 style="font-family:Brush Script MT ,cursive;font-size:55px;"> Mission </h1>
+	<p style="font-family:Georgia ,serif;font-size:15px;"> 
+	To ensure that each dish provided and each of our recipes is unique and fit for the preferences 
+	of our customers, as we want them to remember their time at Sawadee Kitchen.
+	</p>
+	</div>
+	</div>
+	
+	
+	<h2 style="font-family:Brush Script MT ,cursive;font-size:55px;text-align:center;"> Objective </h1>
+	<p style="font-family:Georgia ,serif;font-size:15px;text-align:center;"> 
+	To ensure that the business always runs smoothly according to the business plan through
+	planning, organizing, leading and controlling. 
+	</p> </span>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+	<br><br>
+	<div class="footer">
+	<p> Created by: <br>
+	Sawadee Kitchen <br> 
+	&#169 2022 </p>
+	</div>
+	
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html LANG="en">
+<head>
+	<title> Sawadee Kitchen Menu </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="nav_bar_style.css">
+	<link rel="stylesheet" href="button.css">
+	<link rel="icon" type="image/x-icon" href="images/icon.png">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5d4d4;
+  font-family: Courier New monospace;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2px;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(255, 248, 248);
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(255, 106, 106);
+}
+
+.btn.active {
+  background-color: rgb(17, 8, 8);
+  color: white;
+}
+</style>
+</head>
+<body>
+	<div class="navbar">
+	<div class="row">
+	<div class="menu left">
+	<table style="float:left;"class="table2">
+		<tr>
+			<td style="font-size:25px;font-family: Courier New monospace;text-shadow: 4px 2px 2px white;">
+			<a href="index.html"> <span style="color:black;font-weight:bold;"> SAWADEE KITCHEN </span> </a> </td>
+		</tr>
+	</table>
+	</div>
+	<div class="menu right">
+	<table style="float:right;" class="table1"> 
+		<tr>
+			<td><a href="about_us.html"  >&#128394 ABOUT US</a></td>
+			<td><a href="menu.html" class="active">  &#128722 MENU</a></td>
+			<td><a href="location.html"> &#127760 LOCATION </a></td>
+			<td><a href="team.html"> &#128295 TEAM</a></td>
+			<td><a href="contact.html"> &#128222 CONTACT </a></td>
+		</tr>
+	</table>
+	</div>
+	</div>
+	</div>
+
+	<h1 style="font-family:Garamond ,serif;font-weight:bold;font-size:40px;text-align:center;"> MENU </h1>
+	
+<!-- MAIN (Center website) -->
+<div class="main">
+	
+	<h2>CATEGORIES</h2>
+	
+	<div id="myBtnContainer">
+	  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+	  <button class="btn" onclick="filterSelection('lokching')"> Lokching</button>
+	  <button class="btn" onclick="filterSelection('oden')"> Oden</button>
+	  <button class="btn" onclick="filterSelection('kerabu maggie')"> Kerabu Maggie</button>
+	</div>
+	
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+	  <div class="column lokching">
+		<div class="content">
+		  <img src="images/lokching 1.jpg" alt="lokching 1" style="width:100%">
+		  <h3>ORIGINAL LOKCHING (4 PIECES)</h3>
+		  <h4>RM 1.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 2.jpg" alt="lokching 2" style="width:100%">
+		  <h3>FISH BALL</h3>
+		  <h4>RM 1.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 3.jpg" alt="lokching 3" style="width:100%">
+		  <h3>TOMYAM SAUSAGE</h3>
+		  <h4>RM 1.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 4.jpg" alt="lokching 4" style="width:100%">
+		  <h3>PAPRIK SAUSAGE</h3>
+		  <h4>RM 1.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 5.jpg" alt="lokching 5" style="width:100%">
+		  <h3>PULUT SAUSAGE</h3>
+		  <h4>RM 2.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 6.jpg" alt="lokching 6" style="width:100%">
+		  <h3>CHEESE SAUSAGE</h3>
+		  <h4>RM 2.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 7.jpg" alt="lokching 7" style="width:100%">
+		  <h3>CRAB STICK</h3>
+		  <h4>RM 2.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 8.jpg" alt="lokching 8" style="width:100%">
+		  <h3>SANDWICH CHICKEN SAUSAGE</h3>
+		  <h4>RM 3.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/lokching 9.jpg" alt="lokching 9" style="width:100%">
+		  <h3>SPICY CHICKEN SAUSAGE</h3>
+		  <h4>RM 3.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column lokching">
+		<div class="content">
+		<img src="images/sauce lokching.jpg" alt="sauce lokching" style="width:100.1%">
+		  <h3>SAUCE LOKCHING (1 BOTTLE)</h3>
+		  <h4>RM 5.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/oden 1.jpg" alt="oden 1" style="width: 100%">
+		  <h3>WHITE FISH BALL</h3>
+		  <h4>RM 0.60</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/oden 2.jpg" alt="oden 2" style="width: 100%">
+		  <h3>FRIED FISH BALL</h3>
+		  <h4>RM 0.60</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/oden 3.jpg" alt="oden 3" style="width: 100%">
+		  <h3>CHICKEN BALL</h3>
+		  <h4>RM 0.80</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/oden 4.jpg" alt="oden 4" style="width: 100%">
+		  <h3>VEGGIE FISH CAKE</h3>
+		  <h4>RM 1.80</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/oden 5.jpg" alt="oden 5" style="width: 100%">
+		  <h3>CRAB FISH CAKE</h3>
+		  <h4>RM 1.80</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/oden 6.jpg" alt="oden 6" style="width: 100%">
+		  <h3>SEAFOOD TOFU FISH CAKE</h3>
+		  <h4>RM 1.80</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/oden 7.jpg" alt="oden 7" style="width: 100%">
+		  <h3>KING CRAB CHUNK</h3>
+		  <h4>RM 1.80</h4>
+		</div>
+	  </div>
+
+	  <div class="column oden">
+		<div class="content">
+		<img src="images/paste oden.png" alt="paste oden" style="width: 100%">
+		  <h3>PASTE ODEN VIRAL</h3>
+		  <h4>RM 15.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column kerabu maggie">
+		<div class="content">
+		<img src="images/maggie 1.png" alt="kerabu maggie 1" style="width: 100%">
+		  <h3>KERABU MAGGIE</h3>
+		  <h4>RM 5.00</h4>
+		</div>
+	  </div>
+
+	  <div class="column kerabu maggie">
+		<div class="content">
+		<img src="images/maggie 2.png" alt="kerabu maggie 2" style="width: 100%">
+		  <h3>KERABU MAGGIE SPECIAL</h3>
+		  <h4>RM 7.00</h4>
+		</div>
+	  </div>
+
+	  
+	<!-- END GRID -->
+	</div>
+	
+	<!-- END MAIN -->
+	</div>
+	
+	<script>
+	filterSelection("all")
+	function filterSelection(c) {
+	  var x, i;
+	  x = document.getElementsByClassName("column");
+	  if (c == "all") c = "";
+	  for (i = 0; i < x.length; i++) {
+		w3RemoveClass(x[i], "show");
+		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+	  }
+	}
+	
+	function w3AddClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+	  }
+	}
+	
+	function w3RemoveClass(element, name) {
+	  var i, arr1, arr2;
+	  arr1 = element.className.split(" ");
+	  arr2 = name.split(" ");
+	  for (i = 0; i < arr2.length; i++) {
+		while (arr1.indexOf(arr2[i]) > -1) {
+		  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+		}
+	  }
+	  element.className = arr1.join(" ");
+	}
+	
+	
+	// Add active class to the current button (highlight it)
+	var btnContainer = document.getElementById("myBtnContainer");
+	var btns = btnContainer.getElementsByClassName("btn");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function(){
+		var current = document.getElementsByClassName("active");
+		current[0].className = current[0].className.replace(" active", "");
+		this.className += " active";
+	  });
+	}
+	</script>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+	<br><br>
+		<div class="footer">
+			<p> Created by: <br>
+			Sawadee Kitchen <br> 
+			&#169 2022 </p>
+			</div>
+			
+	</body>
+	</html>
+	
+	

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="nav_bar_style.css">
+	<link rel="stylesheet" href="button.css">
+	<link rel="icon" type="image/x-icon" href="images/icon.png">
+
+	<style>
+	body {
+	  background-color: #f5d4d4;
+	  font-family: Courier New monospace;
+	}
+	
+	body {font-family: Arial, Helvetica, sans-serif;}
+	* {box-sizing: border-box;}
+
+	input[type=text], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-top: 6px;
+	  margin-bottom: 16px;
+	  resize: vertical;
+	}
+
+	input[type=submit] {
+	  background-color:green;
+	  color: white;
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	}
+
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+
+	.container {
+	  border-radius: 5px;
+	  background-color:rgb(235,46,57);
+	  padding: 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+	<div class="row">
+	<div class="menu left">
+	<table style="float:left;"class="table2">
+		<tr>
+			<td style="font-size:25px;font-family: Courier New monospace;text-shadow: 4px 2px 2px white;">
+			<a href="index.html"> <span style="color:black;font-weight:bold;"> SAWADEE KITCHEN </span> </a> </td>
+		</tr>
+	</table>
+	</div>
+	<div class="menu right">
+	<table style="float:right;" class="table1"> 
+		<tr>
+			<td><a href="about_us.html"> &#128394 ABOUT US</a></td>
+			<td><a href="menu.html">  &#128722 MENU</a></td>
+			<td><a href="location.html"> &#127760 LOCATION </a></td>
+			<td><a href="team.html"> &#128295 TEAM</a></td>
+			<td><a href="contact.html" class="active" >&#128222 CONTACT </a></td>
+		</tr>
+	</table>
+	</div>
+	</div>
+	</div>
+<br>
+<br>
+<br>
+
+<h1 style="font-family:Garamond ,serif;font-weight:bold;font-size:40px;text-align:center;"> CONTACT US &#128222</ </h1>
+
+<br>
+<br>
+<br>
+
+     <a href="https://m.facebook.com/SawadeeKtchn/"><img
+      src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="FACEBOOK" border="7"
+      style="width:200px; height:200px;"></a>
+
+     <a href="https://www.instagram.com/sawadeekitchen/?hl=en"><img 
+      src="https://bitzinfotech.com/wp-content/uploads/2020/05/insta-class.png" alt=INSTAGRAM" border="7"
+      style="width:200px; height:200px;"></a>
+
+     <a href=mailto:"rozzaidin@gmail.com"><img
+      src="https://www.designbust.com/download/1024/png/email_icon_transparent512.png" alt=EMAIL" border="7"
+      style="width:200px; height:200px;"></a>
+       
+     <a href="http://www.wasap.my/601113269304"><img
+      src="https://cdn3.iconfinder.com/data/icons/cute-flat-social-media-icons-3/512/whatsapp.png" alt=WHATSAPP" border="7"
+      style="width:200px; height:200px;"></a>
+
+<br>
+<br>
+<br>
+
+
+
+
+<h3 style="font-family:Garamond ,serif;font-weight:bold;font-size:40px;text-align:center;">FEEDBACK FORM</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="state">State</label>
+    <select id="state" name="entry.1120050313">
+      <option value="Kedah">Kedah</option>
+      <option value="Perak">Perak</option>
+      <option value="Perlis">Perlis</option>
+      <option value="Kelantan">Kelantan</option>
+      <option value="Terengganu">Terengganu</option>
+      <option value="Melaka">Melaka</option>
+      <option value="Pahang">Pahang</option>
+      <option value="Selangor">Selangor</option>
+	  <option value="Selangor">Negeri Sembilan</option>
+	  <option value="Selangor">Sabah</option>
+	  <option value="Selangor">Sarawak</option>
+	  <option value="Selangor">Kuala Lumpur</option>
+	  <option value="Selangor">Labuan</option>
+	  <option value="Selangor">Putrajaya</option>
+      <option value="others">Others</option>
+    </select>
+ <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+	<center>
+    <input type="submit" value="Submit">
+	</center>
+  </form>
+<br>
+<br>
+<br>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+<div class="footer">
+	<p> Created by: <br>
+	Sawadee Kitchen <br> 
+	&#169 2022 </p>
+	</div>
+	
+	</body>
+</html>
+</div>
+
+</body>
+</html>
+
+    
+       
