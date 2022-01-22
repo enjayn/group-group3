@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html LANG="en">
+<head>
+	<title> Sawadee Kitchen Homepage </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="nav_bar_style.css">
+	<link rel="stylesheet" href="button.css">
+	<link rel="icon" type="image/x-icon" href="images/icon.png">
+<style>
+
+	body {
+	background-color: #f5d4d4;
+	font-family: Courier New monospace;
+	}
+	
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	  margin: 0;
+	}
+
+	html {
+	  box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+	  box-sizing: inherit;
+	}
+
+	.column {
+	  float: left;
+	  width: 33.3%;
+	  margin-bottom: 16px;
+	  padding: 0 8px;
+	}
+
+	.card {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  margin: 8px;
+	}
+
+	.about-section {
+	  padding: 50px;
+	  text-align: center;
+	  background-color: #474e5d;
+	  color: white;
+	}
+
+	.container {
+	  padding: 0 16px;
+	}
+
+	.container::after, .row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+	.title {
+	  color: grey;
+	}
+
+	.button {
+	  border: none;
+	  outline: 0;
+	  display: inline-block;
+	  padding: 8px;
+	  color: white;
+	  background-color: #000;
+	  text-align: center;
+	  cursor: pointer;
+	  width: 100%;
+	}
+
+	.button:hover {
+	  background-color: #555;
+	}
+
+	@media screen and (max-width: 650px) {
+	  .column {
+		width: 100%;
+		display: block;
+	  }
+	}
+
+</style>
+</head>
+<body>
+	<div class="navbar">
+	<div class="row">
+	<div class="menu left">
+	<table style="float:left;"class="table2">
+		<tr>
+			<td style="font-size:25px;font-family: Courier New monospace;text-shadow: 4px 2px 2px white;">
+			<a href="index.html"> <span style="color:black;font-weight:bold;"> SAWADEE KITCHEN </span> </a> </td>
+		</tr>
+	</table>
+	</div>
+	<div class="menu right">
+	<table style="float:right;" class="table1"> 
+		<tr>
+			<td><a href="about_us.html" class="active" >&#128394 ABOUT US</a></td>
+			<td><a href="menu.html">  &#128722 MENU</a></td>
+			<td><a href="location.html"> &#127760 LOCATION </a></td>
+			<td><a href="team.html"> &#128295 TEAM</a></td>
+			<td><a href="contact.html"> &#128222 CONTACT </a></td>
+		</tr>
+	</table>
+	</div>
+	</div>
+	</div>
+		
+	<br><br>
+	<h1 style="font-family:Garamond ,serif;font-weight:bold;font-size:40px;text-align:center;"> ABOUT US </h1>
+	 <div class="profilePhoto"> 
+    <center>
+		<img src="images/icon.png" alt="sample" width="300" height="250" ></center>
+</div>
+	<br><br>
+	<center>
+		<blockquote>
+					<div style="background-color:white;color:black;padding:20px;">
+				<div style="border: 1px solid black">
+				  <p style="text-align:center;"><strong>LOK CHING is one of the traditional foods available in Kelantan. Its name is quite unique as it is not a term or pronunciation in the Kelantan dialect but is believed to originate from the Thai language. The main ingredient to make this lok ching is fish filling. The name Lok ching is taken from the Thai word "บอล เบิ ร์ น" which means "BEBOLA BAKAR". </strong></p>
+				  <p style="text-align:center;"><strong>The basic ingredient of Lok ching is a fish/meat/chicken/crab/shrimp filling that is ground and mixed with starch, salt and shaped into a round shape like a BALL, or OTHER UNIQUE SHAPE. Raw lok cing will be pricked on a skewer and BURNT over embers. Once cooked, it will be dipped into a SPECIAL THAI SOS</strong></p>
+                  <p style="text-align:center;"><strong>The lok ching business revolution is growing with the passage of time and now lok ching has its own "fans". This unique food from Thailand is starting to be sold on the Malaysian - Thai border such as in Kelantan, Perlis and Kedah and the response is getting warmer</strong></p>
+				  <p style="text-align:center;"><strong>Renewal after renewal is made from the point of view of traditional cooking methods (using charcoal) in improved by the presence of a lok ching burner using a gas / electric stove. Apart from that, the emergence of lok ching varieties from various sources (chicken/meat/fish/squid/shrimp) in various forms adds to the uniqueness of this fast food.</strong></p>
+                </div>
+				</div>
+			</blockquote>
+						</center>
+	<br>
+	
+
+
+ 
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+	
+	<div class="footer">
+	<p> Created by: <br>
+	Sawadee Kitchen <br> 
+	&#169 2022 </p>
+	</div>
+</body>
+</html>
