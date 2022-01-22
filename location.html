@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Sawadee Kitchen Location </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="nav_bar_style.css">
+	<link rel="stylesheet" href="button.css">
+	<link rel="icon" type="image/x-icon" href="images/icon.png">
+<style>
+	.image:hover{
+	box-shadow: 8px 2px 2px rgb(240, 93, 35);	
+	}
+		body {
+	  background-color: #f5d4d4;
+	  font-family: Courier New monospace;
+	}
+</style>
+</head>
+<body>
+	<div class="navbar">
+	<div class="row">
+	<div class="menu left">
+	<table style="float:left;"class="table2">
+		<tr>
+			<td style="font-size:25px;font-family: Courier New monospace;text-shadow: 4px 2px 2px white;">
+			<a href="index.html"> <span style="color:black;font-weight:bold;"> SAWADEE KITCHEN </span> </a> </td>
+		</tr>
+	</table>
+	</div>
+	<div class="menu right">
+	<table style="float:right;" class="table1"> 
+		<tr>
+			<td><a href="about_us.html"  >&#128394 ABOUT US</a></td>
+			<td><a href="menu.html">  &#128722 MENU</a></td>
+			<td><a href="location.html" class="active"> &#127760 LOCATION </a></td>
+			<td><a href="team.html"> &#128295 TEAM</a></td>
+			<td><a href="contact.html"> &#128222 CONTACT </a></td>
+		</tr>
+	</table>
+	</div>
+	</div>
+	</div>
+	
+	<h1 style="font-family:Garamond ,serif;font-weight:bold;font-size:40px;text-align:center;"> LOCATION </h1>
+	
+	<center>
+	<h2> Sawadee Kitchen stall is located adjent to Cinta Sayang Resort.
+		 We chose that area because it is very strategic by being located in a crowded area. </h2> </center>
+	
+	<center>
+		<a href="https://www.google.com/maps/@5.659127,100.5188184,16.06z"> <img class="image" src="images/stall_location.jpeg"> </a>
+	</center>
+	
+	
+	
+	
+	<br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+	
+	<div class="footer">
+	<p> Created by: <br>
+	Sawadee Kitchen <br> 
+	&#169 2022 </p>
+	</div>
+	
+	</body>
+</html>
